@@ -116,7 +116,10 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
+  const parametroUmEmMaiusculo = string1.toUpperCase();
+  const parametroDoisEmMaiusculo = string2.toUpperCase();
+  const saoIguais = parametroUmEmMaiusculo == parametroDoisEmMaiusculo;
+  return saoIguais;
 }
 
 // EXERCÍCIO 13
