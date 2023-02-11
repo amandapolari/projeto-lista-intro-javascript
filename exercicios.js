@@ -103,7 +103,14 @@ function retornaUltimoElemento(array) {
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+  const tamanhoArray = array.length;
+  const primeiroElemento = array[0];
+  const ultimoElemento = array[tamanhoArray - 1];
+  array.shift();
+  array.pop();
+  array.unshift(ultimoElemento);
+  array.push(primeiroElemento);
+  return array;
 }
 
 // EXERCÍCIO 12
