@@ -79,7 +79,10 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+  const tamanhoPrimeiraString = string1.length;
+  const tamanhoSegundaString = string2.length;
+  const possuemMesmoTamanho = tamanhoPrimeiraString === tamanhoSegundaString;
+  return possuemMesmoTamanho;
 }
 
 // EXERCÍCIO 09
