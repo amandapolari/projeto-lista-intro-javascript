@@ -65,7 +65,8 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+  const stringEmMaiuscula = string.toUpperCase();
+  return stringEmMaiuscula;
 }
 
 // EXERCÍCIO 07
