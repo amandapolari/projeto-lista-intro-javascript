@@ -21,16 +21,16 @@ function calculaAreaRetangulo() {
   // implemente sua lógica aqui
   const altura = Number(prompt('Por favor, digite a altura do retângulo'));
   const largura = Number(prompt('Por favor, digite a largura do retângulo'));
-  const areaDoRetangulo = altura * largura;
-  console.log(areaDoRetangulo);
+  const area = altura * largura;
+  console.log(area);
 }
 
 // EXERCÍCIO 02
 function imprimeIdade() {
   // implemente sua lógica aqui
   const anoAtual = Number(prompt('Por favor, digite o ano atual'));
-  const anoNascimento = Number(prompt('Por favor, digite o ano do seu nascimento'));
-  const idade = anoAtual - anoNascimento;
+  const anoDeNascimento = Number(prompt('Por favor, digite o ano do seu nascimento'));
+  const idade = anoAtual - anoDeNascimento;
   console.log(idade);
 }
 
