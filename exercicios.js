@@ -131,11 +131,8 @@ function checaRenovacaoRG() {
   const idade = anoAtual - anoNascimento;
   const tempoDeEmissao = anoAtual - anoDeEmissao;
   const ate20anos = (idade <= 20) && (tempoDeEmissao >= 5);
-  console.log(ate20anos);
   const ate50anos = (idade > 20 && idade <= 50) && (tempoDeEmissao >= 10);
-  console.log(ate50anos);
   const maisDe50 = (idade > 50) && (tempoDeEmissao >= 15);
-  console.log(maisDe50);
   const retornaTrueSe = (ate20anos===true) || (ate50anos===true) || (maisDe50===true);
   console.log(retornaTrueSe);
 }
@@ -143,11 +140,22 @@ function checaRenovacaoRG() {
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-
+  // const divisivelPor4 = ano % 4 === 0;
+  // const divisivelPor100 = ano % 100 === 0;
+  // const divisivelPor400 = ano % 400 === 0;
+  // const eBissexto = divisivelPor4 || divisivelPor400 || divisivelPor100;
+  // return eBissexto;
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
-
+  const perguntaMaiorIdade = prompt('Você tem mais de 18 anos?');
+  const perguntaEnsinoMedio = prompt('Você possui ensino médio completo?');
+  const perguntaDisponibilidade = prompt('Você possui disponibilidade exclusiva durante os horários do curso?');
+  const confirmeMaiorIdade = perguntaMaiorIdade === 'sim';
+  const confirmaEnsinoMedio = perguntaEnsinoMedio === 'sim';
+  const confirmaDisponibilidade = perguntaDisponibilidade === 'sim';
+  const podeSeInscrever = confirmeMaiorIdade && confirmaEnsinoMedio && confirmaDisponibilidade;
+  console.log(podeSeInscrever)
 }
