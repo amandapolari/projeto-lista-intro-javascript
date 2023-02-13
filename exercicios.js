@@ -125,7 +125,19 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-
+  const anoAtual = Number(prompt('Por favor, digite o ano atual'));
+  const anoNascimento = Number(prompt('Por favor, digite o ano do seu nascimento'));
+  const anoDeEmissao = Number(prompt('Por favor, digite o ano atual'));
+  const idade = anoAtual - anoNascimento;
+  const tempoDeEmissao = anoAtual - anoDeEmissao;
+  const ate20anos = (idade <= 20) && (tempoDeEmissao >= 5);
+  console.log(ate20anos);
+  const ate50anos = (idade > 20 && idade <= 50) && (tempoDeEmissao >= 10);
+  console.log(ate50anos);
+  const maisDe50 = (idade > 50) && (tempoDeEmissao >= 15);
+  console.log(maisDe50);
+  const retornaTrueSe = (ate20anos===true) || (ate50anos===true) || (maisDe50===true);
+  console.log(retornaTrueSe);
 }
 
 // EXERCÍCIO 14
