@@ -140,11 +140,10 @@ function checaRenovacaoRG() {
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-  // const divisivelPor4 = ano % 4 === 0;
-  // const divisivelPor100 = ano % 100 === 0;
-  // const divisivelPor400 = ano % 400 === 0;
-  // const eBissexto = divisivelPor4 || divisivelPor400 || divisivelPor100;
-  // return eBissexto;
+  const divisivelPor400 = ano % 400 === 0;
+  const divisivelPor4eNaoPor100 = ano % 4 === 0 && ano % 100 != 0;
+  const eBissexto = divisivelPor400 || divisivelPor4eNaoPor100;
+  return eBissexto;
 }
 
 // EXERCÍCIO 15
