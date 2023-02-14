@@ -81,8 +81,8 @@ function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
   const tamanhoPrimeiraString = string1.length;
   const tamanhoSegundaString = string2.length;
-  const possuemMesmoTamanho = tamanhoPrimeiraString === tamanhoSegundaString;
-  return possuemMesmoTamanho;
+  const verificaIgualdadeDeTamanho = tamanhoPrimeiraString === tamanhoSegundaString;
+  return verificaIgualdadeDeTamanho;
 }
 
 // EXERCÍCIO 09
@@ -118,8 +118,8 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
   const parametroUmEmMaiusculo = string1.toUpperCase();
   const parametroDoisEmMaiusculo = string2.toUpperCase();
-  const saoIguais = parametroUmEmMaiusculo == parametroDoisEmMaiusculo;
-  return saoIguais;
+  const verificaSeAsStringsSaoIguais = parametroUmEmMaiusculo == parametroDoisEmMaiusculo;
+  return verificaSeAsStringsSaoIguais;
 }
 
 // EXERCÍCIO 13
